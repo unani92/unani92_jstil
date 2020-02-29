@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>function practice</title>
+</head>
+<body>
+    <script>
+        // 리턴값이 없는 함수
+        function logTask(task) {
+            console.log(task + ':완료');
+            console.log('-');
+        }
+
+        logTask('보고서 작성');
+        logTask('재고 확인');
+        
+        // 리턴값이 있는 함수
+        function inchToCentimeter(inch) {
+            var centimeter = inch * 2.54;  // 1 inch = 2.54cm
+            return centimeter
+            };             // cm로 계산한 결괏값 돌려주기
+ 
+        var result1 = inchToCentimeter(2); // 2 inch를 cm로 바꾼 값
+        var result2 = inchToCentimeter(3); // 3 inch를 cm로 바꾼 값
+
+        console.log(result1);
+        console.log(result2);
+        console.log(inchToCentimeter(1) + inchToCentimeter(5));
+    </script>
+</body>
+</html>
